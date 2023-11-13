@@ -5,12 +5,17 @@ project "ImPlot"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	includedirs
+	{
+		"../imgui"
+	}
+
 	files
 	{
 		"implot.h",
 		"implot.cpp",
 		"implot_internal.h",
-    "implot_items.cpp",
+		"implot_items.cpp",
 		"implot_demo.cpp"
 	}
 
